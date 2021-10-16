@@ -5,70 +5,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slider</title>
+  <title>Gachimuchi Slider</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <input type="radio" name="slider" id="slider1" checked>
+  <input type="radio" name="slider" id="slider2">
+  <input type="radio" name="slider" id="slider3">
+  <input type="radio" name="slider" id="slider4">
 
   <div class="slider">
     <div class="container">
       <div class="slider__inner">
         <div class="slides__top">
           <div class="slides__wrapper">
-
-            <input type="radio" name="slider" id="slider1" checked>
-            <input type="radio" name="slider" id="slider2">
-            <input type="radio" name="slider" id="slider3">
-            <input type="radio" name="slider" id="slider4">
-
             <div class="slide s1">
-              <img src="img/1.jpg" alt="">
-              <p class="text t1">Чё попался димон, подйем в танки играть</p>
+              <img src="img/1.jpg" alt="slide image">
             </div>
 
             <div class="slide">
-              <img src="img/2.jpg" alt="">
-              <p class="text">Муза Стелла Блум Лейла Феечки ФЕЕЧКИ ВИНКС УЖЕ НЕ ТЕ...</p>
+              <img src="img/2.jpg" alt="slide image">
             </div>
 
             <div class="slide">
-              <img src="img/3.jpg" alt="">
-              <p class="text">ХАЧУ FISTАШЕК</p>
+              <img src="img/3.jpg" alt="slide image">
             </div>
 
             <div class="slide">
-              <img src="img/4.jpg" alt="">
-              <p class="text">Это могли бы быть мы с тобой Но ты не продлил абонемент на апрель</p>
+              <img src="img/4.jpg" alt="slide image">
             </div>
           </div>
         </div>
 
         <div class="slider__bottom">
-          <!-- <div class="slider__text">
+
+          <div class="slider__text">
             <div class="slider__text-wrapper">
-              <input type="radio" name="slider" id="slider1__text" checked>
-              <input type="radio" name="slider" id="slider2__text">
-              <input type="radio" name="slider" id="slider3__text">
-              <input type="radio" name="slider" id="slider4__text">
-  
-              <p class="text t1">Чё попался димон, подйем в танки играть</p>
-              <p class="text">Муза Стелла Блум Лейла Феечки ФЕЕЧКИ ВИНКС УЖЕ НЕ ТЕ...</p>
-              <p class="text">ХАЧУ FISTАШЕК</p>
-              <p class="text">Это могли бы быть мы с тобой Но ты не продлил абонемент на апрель</p>
+              <label class="text t1" for="slider1">Чё попался димон, подйем в танки играть</label>
+              <label class="text" for="slider2">Муза Стелла Блум Лейла Феечки ФЕЕЧКИ ВИНКС УЖЕ НЕ ТЕ...</label>
+              <label class="text" for="slider3">ХАЧУ FISTАШЕК</label>
+              <label class="text" for="slider4">Это могли бы быть мы с тобой Но ты не продлил абонемент на
+                апрель</label>
+
             </div>
-            
-          </div> -->
+          </div>
 
           <div class="slider__buttons">
-            <label class="slider__button" for="slider1"></label>
-            <label class="slider__button" for="slider2"></label>
-            <label class="slider__button" for="slider3"></label>
-            <label class="slider__button" for="slider4"></label>
-            <!-- <label class="slider__button"  for="slider1__text"></label>
-            <label class="slider__button" for="slider2__text"></label>
-            <label class="slider__button"  for="slider3__text"></label>
-            <label class="slider__button"  for="slider4__text"></label> -->
+            <label class="slider__button label1" for="slider1"></label>
+            <label class="slider__button label2" for="slider2"></label>
+            <label class="slider__button label3" for="slider3"></label>
+            <label class="slider__button label4" for="slider4"></label>
           </div>
         </div>
       </div>
