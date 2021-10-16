@@ -26,7 +26,7 @@ input[name="slider"] {
 
 .slides__top{
   max-width: 68.75em;
-  max-height: 40.625em;
+  max-height: 42.625em;
   overflow: hidden;
   margin: 0 auto;
   
@@ -47,7 +47,7 @@ input[name="slider"] {
 .slide img{
   display: block;
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   border-radius: 0.625em;
 }
 
@@ -95,13 +95,13 @@ input[name="slider"] {
   padding: 0;
   margin: 0;
   border: 0;
-  border: 0.188em solid transparent;
+  border: 0.1em solid transparent;
   cursor: pointer;
   transition: all .5s;
 }
 
 .slider__button{
-  padding: 0.313em;
+  padding: 0.35em;
   transition: all .5s;
   cursor: pointer;
 }
@@ -124,7 +124,7 @@ input[name="slider"] {
 #slider3:checked ~ .slider .slider__bottom .slider__buttons .label3 .new__label1,
 #slider4:checked ~ .slider .slider__bottom .slider__buttons .label4 .new__label1{
   background-color: transparent;
-  border: 0.188em solid #71abfe;
+  border: 0.1em solid #71abfe;
 }
 
 .slider__text{
@@ -142,3 +142,38 @@ input[name="slider"] {
   width: 25%;
   transition: all .5s ease;
 } 
+
+@media(max-width: 320px) {
+  body {
+    font-size: 0.85em;
+  }
+
+  .slider__bottom {
+    flex-direction: column-reverse;
+  }
+
+  .slides__wrapper{
+    margin-bottom: 0;
+  }
+
+  .slider__buttons{
+    margin: 1em 0;
+  }
+
+  .slider__button{
+    padding: 0.313em;
+  }
+
+  .new__label1{
+    width: 0.7em;
+    height: 0.7em;
+    border: 0.05em solid transparent;
+  }
+
+  #slider1:checked ~ .slider .slider__bottom .slider__buttons .label1 .new__label1,
+  #slider2:checked ~ .slider .slider__bottom .slider__buttons .label2 .new__label1,
+  #slider3:checked ~ .slider .slider__bottom .slider__buttons .label3 .new__label1,
+  #slider4:checked ~ .slider .slider__bottom .slider__buttons .label4 .new__label1{
+    border: 0.05em solid #71abfe;
+  }
+}
